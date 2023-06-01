@@ -1,0 +1,517 @@
+body{
+    margin: 0px;
+    background-color: var(--Color-body);
+    
+}
+
+button{
+    cursor: pointer;
+}
+
+
+:root{
+    --Color-body: rgb(255,255,255);
+    --Color-Pieza: rgb(11,34,57);
+    --Color-letra: rgb(217,217,217);
+    --Color-Letra2: black;
+    --Tipo-Letra: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+
+.letra-Style{
+
+    font-family: var(--Tipo-Letra);
+    font-size: 20px;
+    color: var(--Color-letra2);
+
+}
+.container{
+    margin: 0 auto;
+    width: 1200px;
+    /*border: solid;*/
+    margin-bottom: 0px;
+}
+.text-center{
+    text-align: center;
+    width: 100%;
+}
+.titulo{
+    font-family: var(--Tipo-Letra);
+    font-size: 45px;
+
+}
+
+
+header{
+    width: 100%;
+    background-color: var(--Color-Pieza);
+    height: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+header>div{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.diamond{
+
+    width: 25px;
+    height: 0;
+    border-width: 0px 10px 10px 10px;
+    border-style: solid;
+    border-color: transparent transparent var(--Color-Pieza) transparent;
+    position: relative;
+    margin: 20px 0 50px 0;
+
+}
+
+.diamond::after{
+    content: "";
+    position: absolute;
+    top:10px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-color: var(--Color-Pieza) transparent transparent transparent;
+    border-width: 40px 25px 0px 20px;
+}
+
+.lg{
+    width: 90px;
+    height: 90px;
+    
+       
+    
+}
+.lg span{
+    border: solid;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Color-body);
+    box-shadow: inset 10px 10px 10px 5px gray;
+}
+
+nav{
+    width: 900px;
+    /*border: solid;*/
+    
+}
+
+nav ul{
+    list-style: none;
+    /*border: solid;*/
+    display: flex;
+    justify-content: flex-end;
+    
+}
+
+nav li{
+
+    display: inline-block;
+    width: 145px;
+    height: 50px;
+    /*border: solid;*/
+    text-align: center;
+    
+}
+nav span{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    color: var(--Color-letra);
+    font-family: var(--Tipo-Letra);
+}
+
+nav a:hover{
+        color : yellow;
+        
+}
+
+
+.close{
+
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    margin: 20px;
+    display: none;
+    border-radius: 30px;
+}
+
+.close>button{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.close>button>img{
+
+    width: 50px;
+    height: 50px;
+
+}
+
+.open{
+    
+    width: 90px;
+    height: 90px;
+    background-color: white;
+    margin: 5px;
+    display: none;
+    border-radius: 30px ;
+
+}
+
+.open>button{
+
+    width: 100%;
+    height: 100%;
+
+}
+
+.open>button>img{
+
+    width: 50px;
+    height: 50px;
+
+}
+
+
+
+
+
+
+
+/*section about-me*/
+
+.about-me>div>div{
+    display: flex;
+    justify-content: center;
+    /*border: solid ;*/
+
+}
+
+
+.my-photo{
+    width: 300px;
+    height: 300px;
+    border: solid;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px;
+
+    box-shadow: 0px 20px 20px 0px rgb(0,0,0,0.4);
+}
+.my-info{
+    width: 300px;
+    height: 300px;
+}
+
+.my-photo>img{
+    width: 300px;
+    height: 300px;
+}
+
+/*section about-me*/
+
+
+
+
+/*Section skils*/
+
+.s-table{
+    width: 1000px;
+    height: 800px;
+    background-color: rgb(245,245,245);
+    border-radius: 25px;
+    margin: 0 auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    box-shadow: 20px 20px 20px 5px black;
+    overflow: hidden;
+
+}
+
+
+.s-table ul{
+    padding: 0;
+}
+.s-table li{
+    
+    display: flex;
+    width: 100%;
+    height: 150px;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+.s-table li div{
+    margin: 10px;
+}
+
+.logo{
+    
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(55,81,113);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 10px 5px black; 
+
+}
+.logo>img{
+    width: 50px;
+    height: 50px;
+
+}
+.logo>p{
+    font-family: var(--Tipo-Letra);
+    color: var(--Color-letra);
+    font-size: 30px;
+}
+
+.level{
+    
+    box-shadow: inset 0px 0px 10px 3px black;
+    width: 80%;
+    height: 50px;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.level::before{
+    content: "0";
+    display: flex;
+    width: 45px;
+    height: 30px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: var(--Tipo-Letra);
+    
+}
+.level::after{
+    content: "100";
+    display: flex;
+    width: 45px;
+    height: 30px;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: var(--Tipo-Letra);
+}
+.level>progress{
+    width: 80%;
+    height: 90%;
+    margin: 15px;
+
+    
+}
+
+
+/*Section skils*/
+
+/*Section Projects*/
+
+ 
+.s-table>div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+.item-P{
+    width: 250px;
+    height: 250px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border: solid;
+    margin: 20px;
+}
+
+.item-P div{
+    background-color: red;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 200px;
+    height: 150px;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.item-P div img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-P>span{
+    
+    margin: 0 auto;
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    height: 70px;
+}
+
+.item-P>span>a{
+    width: 180px;
+    height: 25px;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 3px;
+    text-decoration: none;
+    border: solid;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Section Projects*/
+
+
+/*FOOTER*/
+
+footer{
+    
+    width: 100%;
+    margin-top:30px;
+    background-color: var(--Color-Pieza);
+
+}
+footer>div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer>div>div{
+    width: 350px;
+    height: 300px;   
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.item-f{
+    width: 150px;
+    height: 80px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.contact button{
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+    padding: 0px;
+    background-color: transparent;
+    border-style: none;
+}
+
+.item-f>button>img{
+    width: 100%;
+    height: 100%;
+}
+
+.item-f>p{
+    font-family: var(--Tipo-Letra);
+    color: var(--Color-letra);
+    font-size: 12px;
+    text-align: center;
+}
+
+/*FOOTER*/
+
+
+
+/*Cuadrado con border cortados*/
+
+.cuadrado-raro{
+
+    margin: 50px;    
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: var(--Color-Pieza);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+    
+}
+
+.cuadrado-raro::after{
+
+    content: "";
+    display: flex;
+    width: 0px;
+    height: 0px;
+    background-color: red;
+    border-top: 25px solid white;
+    border-right:  25px solid white;
+    border-bottom:  25px solid var(--Color-Pieza);
+    border-left: 25px solid var(--Color-Pieza);
+
+}
+
+.cuadrado-raro::before{
+
+    content: "";
+    display: flex;
+    width: 0px;
+    height: 0px;
+    background-color: blue;
+    border-top: 25px solid var(--Color-Pieza);
+    border-right: 25px solid var(--Color-Pieza);
+    border-bottom: 25px solid white;
+    border-left: 25px solid white;
+    
+}
+
+
+.cuadrado-raro>p{
+
+    font-style: italic;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    font-family: var(--Tipo-Letra);
+    color: var(--Color-letra);
+}
+
+
+
+/*Cuadrado con border cortados*/

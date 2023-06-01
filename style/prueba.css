@@ -1,0 +1,20 @@
+.prueba{
+
+    width: 100%;
+    height: 800px;
+    border: solid;
+    background-color: red;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.prueba>div{
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    margin: 20px;
+}
